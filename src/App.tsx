@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import anime from "animejs";
+import title from "/title.png"
 const tl = anime.timeline({
   easing: "linear",
   duration: 10000,
@@ -122,7 +123,7 @@ function App() {
         </div>
       </div>
       <div className="title">
-        <img src="/title.png" alt="title" width={"400"} />
+        <img src={title} alt="title" width={"400"} />
       </div>
     </div>
   );
